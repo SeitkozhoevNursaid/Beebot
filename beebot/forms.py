@@ -36,4 +36,4 @@ class BotButtonsForm(forms.ModelForm):
 class BotTokenForm(forms.ModelForm):
     class Meta:
         model = BotToken
-        fields = ['token']
+        fields = ['name']

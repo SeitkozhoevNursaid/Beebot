@@ -42,13 +42,14 @@ class BotPhoto(models.Model):
 
 class BotToken(models.Model):
     token = models.CharField(('Токен'), max_length=100)
+    name = models.CharField(("Название Бота"), max_length=50)
 
     class Meta:
         verbose_name = 'Запуск бота'
         verbose_name_plural = 'Запуск бота'
 
     def __str__(self):
-        return self.token
+        return self.name
 
 
 class BotButtons(models.Model):
