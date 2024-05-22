@@ -1,7 +1,8 @@
 from django.core.management.base import BaseCommand
 from django.core.management import call_command
 import threading
-from beebot.callbacks import thread, create_lock_file, delete_lock_file
+from beebot.callbacks import thread
+
 
 class Command(BaseCommand):
     help = 'Запускает Django сервер и Telegram-бота'

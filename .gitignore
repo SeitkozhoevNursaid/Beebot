@@ -3,6 +3,5 @@ venv/
 logs/*
 beebot/__pycache__/
 config/__pycache__/
-beebot/migrations/
 media/
 static/
